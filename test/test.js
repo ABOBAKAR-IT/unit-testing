@@ -1,5 +1,4 @@
 
-const { expect } = require('@jest/globals');
 var {sum,sendError}=require('../app')
 
 it("sum to equel to 3",()=>{
@@ -123,4 +122,5 @@ test('compiling android goes as expected', () => {
    expect(() => sendError('you are using the wrong code')).toThrow('you are using the wrong code');
   expect(() => sendError('you are using the wrong code')).toThrow(/code/);
 });
+
 
