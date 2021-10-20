@@ -48,3 +48,21 @@ test('zero', () => {
   expect(sum(2,3)).toBeTruthy();
   expect(z).toBeFalsy();
 });
+
+
+// Numbers
+// #
+
+// Most ways of comparing numbers have matcher equivalents.
+test('two plus two', () => {
+  const value = 2 + 2;
+  expect(sum(1,3)).toBeGreaterThan(3);
+  expect(sum(2,3)).toBeGreaterThanOrEqual(3.5);
+  expect(sum(1,3)).toBeLessThan(5);
+  expect(sum(1,0)).toBeLessThanOrEqual(4.5);
+
+  // toBe and toEqual are equivalent for numbers
+  expect(sum(3,1)).toBe(4);
+  expect(sum(2,2)).toEqual(4);
+});
+
