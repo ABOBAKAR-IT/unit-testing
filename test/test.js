@@ -65,5 +65,27 @@ test('two plus two', () => {
   expect(sum(3,1)).toBe(4);
   expect(sum(2,2)).toEqual(4);
   expect(sum(2,3)).toEqual(expect.any(Number))
+  expect(sum(0,.2)).toBeCloseTo(0.2); 
 });
+
+
+// Strings
+// #
+
+// You can check strings against regular expressions with toMatch:
+
+test('there is no I in team', () => {
+  expect('team').not.toMatch(/I/);
+});
+
+test('but there is a "stop" in Christoph', () => {
+  expect('Christoph').toMatch(/stop/);
+  expect("rana").toEqual(expect.any(String))
+  expect("rana").toEqual("rana")
+  
+});
+
+
+
+
 
