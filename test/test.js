@@ -40,3 +40,11 @@ test('null', () => {
   expect(n).toBeFalsy();
 });
 
+test('zero', () => {
+  const z = 0;
+  expect(z).not.toBeNull();
+  expect(sum(1,2)).toBeDefined();
+  expect(z).not.toBeUndefined();
+  expect(sum(2,3)).toBeTruthy();
+  expect(z).toBeFalsy();
+});
