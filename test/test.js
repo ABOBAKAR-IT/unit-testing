@@ -64,5 +64,6 @@ test('two plus two', () => {
   // toBe and toEqual are equivalent for numbers
   expect(sum(3,1)).toBe(4);
   expect(sum(2,2)).toEqual(4);
+  expect(sum(2,3)).toEqual(expect.any(Number))
 });
 
