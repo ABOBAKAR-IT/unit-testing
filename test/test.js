@@ -1,5 +1,7 @@
 
-var {sum}=require('../app')
+const { expect } = require('@jest/globals');
+var {sum,sendError}=require('../app')
+
 it("sum to equel to 3",()=>{
   expect(sum(1, 2)).toBe(3);
 })
@@ -86,6 +88,21 @@ test('but there is a "stop" in Christoph', () => {
 });
 
 
+// Arrays and iterables#
 
+// You can check if an array or iterable contains a particular item using toContain:
+const shoppingList = [
+  'diapers',
+  'kleenex',
+  'trash bags',
+  'paper towels',
+  'milk',
+];
+
+test('the shopping list has milk on it', () => {
+  expect(shoppingList).toContain('milk');
+  expect(new Set(shoppingList)).toContain('milk');
+  expect(shoppingList).toEqual(expect.any(Array))
+});
 
 
