@@ -1,4 +1,5 @@
-const { fetchData } = require("../app");
+//callback 
+const { fetchData ,promis} = require("../app");
 
 it('the data is peanut butter', done => {
     function callback(data) {
@@ -11,4 +12,15 @@ it('the data is peanut butter', done => {
     }
   
     fetchData(callback);
+  });
+
+
+  //promises
+
+  it('test promises ', () => {
+    return promis().then(data => {
+      expect(data).toBe('rana');
+    }).catch(data=>{
+      expect(data).toBe('grana')
+    })
   });
