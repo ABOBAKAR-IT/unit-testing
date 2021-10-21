@@ -6,8 +6,8 @@ module.exports.sendError=(sms)=>{
     throw new Error(sms);
   }
   
-  module.exports.fetchData=()=>{
-    return ('rana abobakar')
+  module.exports.fetchData=(back)=>{
+    return back('rana abobakar')
   }
   
   
