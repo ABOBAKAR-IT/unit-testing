@@ -16,9 +16,21 @@ module.exports.sendError=(sms)=>{
   //promises function
 module.exports.promis=()=>{
 return new Promise((resolve,reject)=>{
-if(1==11)
+if(1==1)
  resolve('rana')
 else
  reject('grana')
   })}
   
+
+  //await / async
+
+  module.exports.promis2=()=>{
+    return new Promise((resolve,reject)=>{
+    if(1==1)
+     resolve('rana')
+    else
+     reject('grana')
+      })}
+      
+    

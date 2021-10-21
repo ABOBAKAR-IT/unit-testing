@@ -1,5 +1,5 @@
 //callback 
-const { fetchData ,promis} = require("../app");
+const { fetchData ,promis, sum} = require("../app");
 
 it('the data is peanut butter', done => {
     function callback(data) {
@@ -24,3 +24,18 @@ it('the data is peanut butter', done => {
       expect(data).toBe('grana')
     })
   });
+
+
+  it('the data is peanut butter', () => {
+    return expect(promis()).resolves.toBe('rana')
+  });
+
+  //async / await
+
+  it('test promises ',async () => {
+   const data=await sum(1,3)
+  expect(data).toBe(4)
+  });
+
+
+
