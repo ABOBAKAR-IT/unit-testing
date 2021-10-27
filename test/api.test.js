@@ -9,5 +9,7 @@ it('should create a new post', async () => {
         title: 'test is cool',
       })
     expect(res.statusCode).toEqual(201)
-   // expect(res.body).toEqual(expect.any(Object))
+    expect(res.body).toEqual(expect.any(Object))
+    
   })
+
