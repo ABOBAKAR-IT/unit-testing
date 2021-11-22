@@ -18,6 +18,9 @@ it("sum is number",()=>{
   expect(sum(1, 2)).toBe(3);
 })
 
+it ("sum equal to 89" ,()=>{
+  expect(sum(80,9)).toBe(89)
+})
 
 
 // Truthiness #
